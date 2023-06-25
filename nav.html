@@ -1,0 +1,232 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
+        </a>
+        <a href="history.html" style="display: block; margin-bottom: 20px;">
+            История компании
+        </a>
+        <a href="team.html" style="display: block; margin-bottom: 20px;">
+            Команда
+        </a>
+        <a href="certificates.html" style="display: block; margin-bottom: 20px;">
+            Лицензии и сертификаты
+        </a>
+        <a href="docs.html" style="display: block; margin-bottom: 20px;">
+            Нормативные документы
+        </a>
+        <a href="requisite.html" style="display: block; margin-bottom: 20px;">
+            Реквизиты
+        </a>
+        <a href="reviews.html" style="display: block; margin-bottom: 20px;">
+            Отзывы клиентов
+        </a>
+        <a href="vacancies.html" style="display: block; margin-bottom: 20px;">
+            Вакансии
+        </a>
+        <a href="vacancy.html" style="display: block; margin-bottom: 20px;">
+            Вакансия
+        </a>
+        <a href="cooperate.html" style="display: block; margin-bottom: 20px;">
+            Сотрудничество
+        </a>
+        <a href="calc.html" style="display: block; margin-bottom: 20px;">
+            Расчет стоимости
+        </a>
+        <a href="quality.html" style="display: block; margin-bottom: 20px;">
+            Гарантия качества
+        </a>
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Наши услуги
+        </a>
+        <a href="service.html" style="display: block; margin-bottom: 20px;">
+            Услуга
+        </a>
+        <a href="objects.html" style="display: block; margin-bottom: 20px;">
+            реализованные объекты
+        </a>
+        <a href="prices.html" style="display: block; margin-bottom: 20px;">
+            стоимость
+        </a>
+        <a href="object.html" style="display: block; margin-bottom: 20px;">
+            объект
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Запись блога
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="politics.html" style="display: block; margin-bottom: 20px;">
+            Политика обработки персональных данных
+        </a>
+        <a href="confirm.html" style="display: block; margin-bottom: 20px;">
+            Пользовательское соглашение
+        </a>
+        <a href="map.html" style="display: block; margin-bottom: 20px;">
+            Карта сайта
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="reqModal">
+            Откликнуться
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="reqModal2">
+            Отправьте нам запрос
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="thankModal">
+            Спасибо за обращение
+        </button>
+
+    </div>
+
+    <div class="modal modal-order" id="reqModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button class="modal__close _close-modal">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__scroll">
+            <div class="modal__info">
+                <div class="text30 bold-text uppercase-text">
+                    Откликнуться
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <input type="tel" placeholder="Фамилия, имя, отчество">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="tel" placeholder="Ваш номер телефона">
+                </fieldset>
+                <fieldset class="file-input">
+                    <span>Прикрепить резюме</span>
+                    <div class="file-input__hint">
+                        <span class="text12 light-text">
+                            Разрешены типы: doc, pdf, docx
+                        </span>
+                        <img src="img/file-add.svg" alt="">
+                    </div>
+                    <input type="file">
+                </fieldset>
+                <fieldset class="fg">
+                    <textarea placeholder="Сообщение"></textarea>
+                </fieldset>
+                <div class="m-check _full">
+                    <input type="checkbox">
+                    <label>
+                        <span>Отправляя заявку, я даю согласие на обработку персональных данных в рамках рассмотрения вопроса о принятии на работу соискателя на должность.</span>
+                    </label>
+                </div>
+                <button class="consult-form__btn m-btn m-btn-primary">
+                    <span>Отправить заявку</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="reqModal2">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button class="modal__close _close-modal">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__scroll">
+            <div class="modal__info">
+                <div class="text30 bold-text uppercase-text">
+                    Отправьте нам запрос
+                </div>
+                <div class="text18">
+                    И наши специалисты свяжуться с вами <br> в ближайшее время
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <input type="tel" placeholder="Фамилия, имя, отчество">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="tel" placeholder="Ваш номер телефона">
+                </fieldset>
+                <div class="m-check _full">
+                    <input type="checkbox">
+                    <label>
+                        <span>Отправляя заявку, я даю согласие на обработку персональных данных в рамках рассмотрения вопроса о принятии на работу соискателя на должность.</span>
+                    </label>
+                </div>
+                <button class="consult-form__btn m-btn m-btn-white">
+                    <span>Вернуться на сайт</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-thank" id="thankModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button class="modal__close _close-modal">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__scroll">
+            <div class="modal__info">
+                <div class="text30 bold-text uppercase-text">
+                    Спасибо за обращение
+                </div>
+                <div class="text18">
+                    Наши специалисты свяжуться с вами в ближайшее время
+                </div>
+            </div>
+            <button class="consult-form__btn m-btn m-btn-white">
+                <span>Вернуться на сайт</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
